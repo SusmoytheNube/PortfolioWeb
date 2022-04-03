@@ -173,10 +173,6 @@ p {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Buttons and Links ----- */
-/* --------------------------------------- */
-
 a {
     color: var(--white);
     font-weight: 400;
@@ -321,10 +317,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Navigation ----- */
-/* --------------------------------------- */
-
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -393,10 +385,6 @@ span{
     background: var(--pink);
 }
 
-/* --------------------------------------- */
-/* ----- Header ----- */
-/* --------------------------------------- */
-
 .header {
     background: linear-gradient(rgba(120, 120, 120, 0.1), rgba(0,0,0, .4)), 
         url('./images/background.jpg');
@@ -414,7 +402,6 @@ span{
 }
 
 .header__text p {
-    position: fixed;
     margin: 1.5rem 0 3.5rem;
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
@@ -431,9 +418,6 @@ span{
     }
 }
 
-/* --------------------------------------- */
-/* ----- Work ----- */
-/* --------------------------------------- */
 
 .work__box {
     display: flex;
