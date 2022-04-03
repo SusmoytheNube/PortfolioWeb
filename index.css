@@ -132,7 +132,7 @@ h1,h2,h3 {
 }
 h2 {
     font-size: var(--font-size-large);
-    margin-bottom: var(--gutter-medium);
+    margin-bottom: var(--gutter-small);
 }
 
 h2::after {
@@ -146,7 +146,7 @@ h2::after {
 
 h3 {
     font-size: var(--font-size-medium-1);
-    margin-bottom: var(--gutter-normal);
+    margin-bottom: var(--gutter-medium);
 }
 
 @media(max-width: 500px) {
@@ -172,6 +172,10 @@ p {
         max-width: var(--container-small-width);
     }
 }
+
+/* --------------------------------------- */
+/* ----- Buttons and Links ----- */
+/* --------------------------------------- */
 
 a {
     color: var(--white);
@@ -223,7 +227,7 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--white);
     height: 100%;
     z-index: -1;
-    transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: all 0.4s cubic-bezier(1, 0.68, 0.20, 0.9);
 }
 
 .btn:hover::after,
@@ -283,8 +287,6 @@ body:not(.user-is-tabbing) a:focus {
     font-family: sans-serif;
 }
 
-/* ----- Back to Top ----- */
-
 .back-to-top {
     position: fixed;
     bottom: 4rem;
@@ -316,6 +318,10 @@ body:not(.user-is-tabbing) a:focus {
         right: 1rem;
     }
 }
+
+/* --------------------------------------- */
+/* ----- Navigation ----- */
+/* --------------------------------------- */
 
 .nav {
     display: flex;
@@ -385,25 +391,30 @@ span{
     background: var(--pink);
 }
 
+/* --------------------------------------- */
+/* ----- Header ----- */
+/* --------------------------------------- */
+
 .header {
-    background: linear-gradient(rgba(120, 120, 120, 0.1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0, .4)), 
         url('./images/background.jpg');
     height: 100vh;
     background-size: cover;
+    margin-top: 2rem;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
 }
 
 .header__text {
-    position: absolute;
+    position:absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .header__text p {
     margin: 1.5rem 0 3.5rem;
-    max-width: var(--container-medium-width);
+    max-width: var(--container-max-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
 }
@@ -414,10 +425,13 @@ span{
     }
 
     .header__text p {
-        transform: scale(.8);
+        transform: scale(.7);
     }
 }
 
+/* --------------------------------------- */
+/* ----- Work ----- */
+/* --------------------------------------- */
 
 .work__box {
     display: flex;
